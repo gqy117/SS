@@ -2,7 +2,7 @@ version: "2"
 
 services:
   sonarqube:
-    image: sonarqube
+    image: gqy117/sonarqube-dependency-check
     ports:
       - "9000:9000"
     networks:
