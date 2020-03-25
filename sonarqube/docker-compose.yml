@@ -23,6 +23,8 @@ services:
   db:
     image: postgres
     restart: always
+    ports:
+      - "54320:5432"
     networks:
       - sonarnet
     environment:
