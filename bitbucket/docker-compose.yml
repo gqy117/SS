@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jenkins:
+    image: 'atlassian/bitbucket-server:6.6.1-ubuntu-jdk11'
+    ports:
+      - '7990:7990'
+      - '7999:7999'
+    volumes:
+      - 'bitbucketVolume:/var/atlassian/application-data/bitbucket'
+volumes:
+  bitbucketVolume:
+    driver: local
